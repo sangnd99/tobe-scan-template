@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tobescan</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <span class="mobile-menu__close" id="mobile-menu-close"></span>
+      <ul>
+        <div class="mobile-menu__product" id="product-wrapper">
+          <button id="product">
+            <img
+              src="assets/svg/common/ecosystem-mobile.svg"
+              width="20"
+              alt="Ecosystem"
+            />
+            PRODUCT
+          </button>
+          <div class="mobile-menu__product-ecosystem">
+            <a href="#">Swaptobe</a>
+            <a href="#">Extobe</a>
+            <a href="#">Tobemeta</a>
+            <a href="#">Tobesonet</a>
+            <a href="#">Tobereal</a>
+            <a href="#">Tobemarket</a>
+            <a href="#">Tobecoin</a>
+            <a href="#">Tobegame</a>
+            <a href="#">Tobeecom</a>
+            <a href="#">Tobentf</a>
+            <a href="#">Tobefarm</a>
+            <a href="#">Tobescan</a>
+          </div>
+        </div>
+        <li><a href="#">EXPLORER</a></li>
+        <li><a href="#">NETWORK</a></li>
+        <li><a href="#">TOP 100</a></li>
+        <li><a href="#">API</a></li>
+        <li class="mobile-menu__button-wrapper">
+          <a href="#" class="mobile-menu__signup">Sign up</a>
+        </li>
+      </ul>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <!-- Header section -->
+    <header class="header" id="header">
+      <div class="header__container container">
+        <img
+          src="assets/svg/logo.svg"
+          width="237"
+          height="47"
+          alt="Tobescan logo"
+          class="header__logo"
+        />
+        <nav class="header__nav">
+          <!-- Ecosystem -->
+          <div class="header__nav__ecosystem">
+            <img
+              src="assets/svg/common/ecosystem.svg"
+              width="23"
+              height="16"
+              alt="Ecosystem"
+              class="header__nav__ecosystem-icon"
+            />
+            <ul class="header__nav__ecosystem-dropdown">
+              <li>
+                <a href="#">
+                  <img
+                    src="assets/svg/ecosystems/swaptobe.svg"
+                    width="77"
+                    height="38"
+                    alt="Swaptobe"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="assets/svg/ecosystems/extobe.svg"
+                    width="70"
+                    height="38"
+                    alt="Extobe"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="assets/svg/ecosystems/tobemeta.svg"
+                    width="57"
+                    height="50"
+                    alt="Tobemeta"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="assets/svg/ecosystems/tobesonet.svg"
+                    width="57"
+                    height="50"
+                    alt="Tobesonet"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="assets/svg/ecosystems/tobereal.svg"
+                    width="57"
+                    height="50"
+                    alt="Tobereal"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="assets/svg/ecosystems/tobemarket.svg"
+                    width="57"
+                    height="50"
+                    alt="Tobemarket"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="assets/svg/ecosystems/tobecoin.svg"
+                    width="57"
+                    height="50"
+                    alt="Tobecoin"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="assets/svg/ecosystems/tobegame.svg"
+                    width="57"
+                    height="50"
+                    alt="Tobegame"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="assets/svg/ecosystems/tobeecom.svg"
+                    width="57"
+                    height="50"
+                    alt="Tobeecom"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="assets/svg/ecosystems/tobentf.svg"
+                    width="57"
+                    height="50"
+                    alt="Tobentf"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="assets/svg/ecosystems/tobefarm.svg"
+                    width="57"
+                    height="50"
+                    alt="Tobefarm"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="assets/svg/ecosystems/tobescan.svg"
+                    width="90"
+                    height="43"
+                    alt="Tobescan"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Navigation -->
+          <ul class="header__nav__navigation">
+            <li>
+              <a href="#"> EXPLORER </a>
+            </li>
+            <li>
+              <a href="#"> NETWORK </a>
+            </li>
+            <li>
+              <a href="#"> TOP 100 </a>
+            </li>
+            <li>
+              <a href="#"> API </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="signup">
+          <a href="#"> Sign Up </a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <img
+            src="assets/svg/common/hamburger.svg"
+            width="24"
+            height="24"
+            alt="Hamburger"
+          />
+        </div>
+      </div>
+    </header>
+    <!-- Main section -->
+    <main>
+      <!-- Banner section -->
+      <section class="introduce">
+        <div class="introduce__container container">
+          <h1>Explore TobeScan Blockchain</h1>
+        </div>
+        <div class="introduce__action">
+          <div class="introduce__action-wrapper">
+            <div class="introduce__action-container">
+              <div class="introduce__action-filter">
+                All filter
+                <img
+                  src="assets/svg/common/arrow-down.svg"
+                  width="12"
+                  height="9"
+                  alt="Arrow down"
+                />
+              </div>
+              <input placeholder="Search by Address/Tnx Hash/Block/Token" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Detail section -->
+      <section class="detail container">
+        <!-- Detail left section -->
+        <div class="detail__left">
+          <div class="detail__left__icon">
+            <img
+              src="assets/svg/details/logo.svg"
+              width="100"
+              height="100"
+              alt="Coin"
+            />
+          </div>
+          <!-- Statictical -->
+          <div class="detail__left__statictical">
+            <div class="detail__left__statictical-section">
+              <div class="detail__left__statictical-image-wrapper">
+                <img
+                  src="assets/svg/details/price.svg"
+                  width="40"
+                  height="30"
+                  alt="price"
+                />
+              </div>
+              <div class="detail__left__statictical-data">
+                <p class="detail__left__statictical-data-name">SWB PRICE</p>
+                <p><span class="semi-bold">$418.48&nbsp;</span>@ 0.009322</p>
+                <p class="detail__left_statictical-data-btc">
+                  BTC&nbsp;<span class="highlight">(+1.26%)</span>
+                </p>
+              </div>
+            </div>
+            <div class="detail__left__statictical-section">
+              <div class="detail__left__statictical-image-wrapper">
+                <img
+                  src="assets/svg/details/market.svg"
+                  width="40"
+                  height="35"
+                  alt="market"
+                />
+              </div>
+              <div class="detail__left__statictical-data">
+                <p class="detail__left__statictical-data-name">SWB MARKETCAP</p>
+                <p>$9,442,093,663.00</p>
+              </div>
+            </div>
+            <div class="detail__left__statictical-section">
+              <div class="detail__left__statictical-image-wrapper">
+                <img
+                  src="assets/svg/details/transaction.svg"
+                  width="40"
+                  height="34"
+                  alt="transaction"
+                />
+              </div>
+              <div class="detail__left__statictical-data">
+                <p class="detail__left__statictical-data-name">TRANSACTIONS</p>
+                <p>2,703.18 M (71.7 TPS)</p>
+              </div>
+            </div>
+            <div class="detail__left__statictical-section">
+              <div class="detail__left__statictical-image-wrapper">
+                <img
+                  src="assets/svg/details/latest.svg"
+                  width="40"
+                  height="30"
+                  alt="latest"
+                />
+              </div>
+              <div class="detail__left__statictical-data">
+                <p class="detail__left__statictical-data-name">LATEST BLOCK</p>
+                <p>16427406 (3.0s)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Detail right section -->
+        <div class="detail__right">
+          <p>
+            Network (KH/s) :&nbsp;<span class="highlight semi-bold"
+              >37.237</span
+            >
+          </p>
+          <p>Difficulty: <span class="highlight semi-bold">0.00</span></p>
+          <p>
+            Coin Supply (SWB):&nbsp;<span class="highlight semi-bold"
+              >71,275</span
+            >
+          </p>
+        </div>
+      </section>
+      <!-- Latest view section -->
+      <section class="latest container">
+        <div class="latest__table">
+          <p class="latest__table-title">Latest Blocks</p>
+          <div class="latest__table-control">
+            <table>
+              <thead>
+                <tr>
+                  <th>Username</th>
+                  <th>Time</th>
+                  <th>Validated</th>
+                  <th>Reward</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="center">
+                      <img
+                        src="assets/svg/common/name-prefix-ex.svg"
+                        width="30"
+                        height="30"
+                        alt="Name prefix"
+                      />
+                      1627392
+                    </div>
+                  </td>
+                  <td>19 minutes ago</td>
+                  <td>Defibit</td>
+                  <td>0.14843 BNB</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="center">
+                      <img
+                        src="assets/svg/common/name-prefix-ex.svg"
+                        width="30"
+                        height="30"
+                        alt="Name prefix"
+                      />
+                      1627392
+                    </div>
+                  </td>
+                  <td>19 minutes ago</td>
+                  <td>Defibit</td>
+                  <td>0.14843 BNB</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="center">
+                      <img
+                        src="assets/svg/common/name-prefix-ex.svg"
+                        width="30"
+                        height="30"
+                        alt="Name prefix"
+                      />
+                      1627392
+                    </div>
+                  </td>
+                  <td>19 minutes ago</td>
+                  <td>Defibit</td>
+                  <td>0.14843 BNB</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="center">
+                      <img
+                        src="assets/svg/common/name-prefix-ex.svg"
+                        width="30"
+                        height="30"
+                        alt="Name prefix"
+                      />
+                      1627392
+                    </div>
+                  </td>
+                  <td>19 minutes ago</td>
+                  <td>Defibit</td>
+                  <td>0.14843 BNB</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="center">
+                      <img
+                        src="assets/svg/common/name-prefix-ex.svg"
+                        width="30"
+                        height="30"
+                        alt="Name prefix"
+                      />
+                      1627392
+                    </div>
+                  </td>
+                  <td>19 minutes ago</td>
+                  <td>Defibit</td>
+                  <td>0.14843 BNB</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="center">
+                      <img
+                        src="assets/svg/common/name-prefix-ex.svg"
+                        width="30"
+                        height="30"
+                        alt="Name prefix"
+                      />
+                      1627392
+                    </div>
+                  </td>
+                  <td>19 minutes ago</td>
+                  <td>Defibit</td>
+                  <td>0.14843 BNB</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="center">
+                      <img
+                        src="assets/svg/common/name-prefix-ex.svg"
+                        width="30"
+                        height="30"
+                        alt="Name prefix"
+                      />
+                      1627392
+                    </div>
+                  </td>
+                  <td>19 minutes ago</td>
+                  <td>Defibit</td>
+                  <td>0.14843 BNB</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="center">
+                      <img
+                        src="assets/svg/common/name-prefix-ex.svg"
+                        width="30"
+                        height="30"
+                        alt="Name prefix"
+                      />
+                      1627392
+                    </div>
+                  </td>
+                  <td>19 minutes ago</td>
+                  <td>Defibit</td>
+                  <td>0.14843 BNB</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="center">
+                      <img
+                        src="assets/svg/common/name-prefix-ex.svg"
+                        width="30"
+                        height="30"
+                        alt="Name prefix"
+                      />
+                      1627392
+                    </div>
+                  </td>
+                  <td>19 minutes ago</td>
+                  <td>Defibit</td>
+                  <td>0.14843 BNB</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="center">
+                      <img
+                        src="assets/svg/common/name-prefix-ex.svg"
+                        width="30"
+                        height="30"
+                        alt="Name prefix"
+                      />
+                      1627392
+                    </div>
+                  </td>
+                  <td>19 minutes ago</td>
+                  <td>Defibit</td>
+                  <td>0.14843 BNB</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="center">
+                      <img
+                        src="assets/svg/common/name-prefix-ex.svg"
+                        width="30"
+                        height="30"
+                        alt="Name prefix"
+                      />
+                      1627392
+                    </div>
+                  </td>
+                  <td>19 minutes ago</td>
+                  <td>Defibit</td>
+                  <td>0.14843 BNB</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="center">
+                      <img
+                        src="assets/svg/common/name-prefix-ex.svg"
+                        width="30"
+                        height="30"
+                        alt="Name prefix"
+                      />
+                      1627392
+                    </div>
+                  </td>
+                  <td>19 minutes ago</td>
+                  <td>Defibit</td>
+                  <td>0.14843 BNB</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <button class="latest__table-button">View all blocks</button>
+        </div>
+        <div class="latest__table">
+          <p class="latest__table-title">Latest Transactions</p>
+          <div class="latest__table-control">
+            <table>
+              <thead>
+                <tr>
+                  <th>Username</th>
+                  <th>Time</th>
+                  <th>From - To</th>
+                  <th>Reward</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="center">
+                      <img
+                        src="assets/svg/common/name-prefix-tx.svg"
+                        width="30"
+                        height="30"
+                        alt="Name prefix"
+                      />
+                      <p class="truncate">
+                        0xca23ecad0xca23ecad0xca23ecad0xca23ecad0xca23ecad
+                      </p>
+                    </div>
+                  </td>
+                  <td>10 secs ago</td>
+                  <td>
+                    <div class="text-secondary">
+                      <p class="truncate">From 0cae53deesce53deesce53deesc</p>
+                      <p class="truncate">To 0xxx00000000000000000000</p>
+                    </div>
+                  </td>
+                  <td>0.61519 BNB</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="center">
+                      <img
+                        src="assets/svg/common/name-prefix-tx.svg"
+                        width="30"
+                        height="30"
+                        alt="Name prefix"
+                      />
+                      <p class="truncate">
+                        0xca23ecad0xca23ecad0xca23ecad0xca23ecad0xca23ecad
+                      </p>
+                    </div>
+                  </td>
+                  <td>10 secs ago</td>
+                  <td>
+                    <div class="text-secondary">
+                      <p class="truncate">From 0cae53deesce53deesce53deesc</p>
+                      <p class="truncate">To 0xxx00000000000000000000</p>
+                    </div>
+                  </td>
+                  <td>0.61519 BNB</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="center">
+                      <img
+                        src="assets/svg/common/name-prefix-tx.svg"
+                        width="30"
+                        height="30"
+                        alt="Name prefix"
+                      />
+                      <p class="truncate">
+                        0xca23ecad0xca23ecad0xca23ecad0xca23ecad0xca23ecad
+                      </p>
+                    </div>
+                  </td>
+                  <td>10 secs ago</td>
+                  <td>
+                    <div class="text-secondary">
+                      <p class="truncate">From 0cae53deesce53deesce53deesc</p>
+                      <p class="truncate">To 0xxx00000000000000000000</p>
+                    </div>
+                  </td>
+                  <td>0.61519 BNB</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="center">
+                      <img
+                        src="assets/svg/common/name-prefix-tx.svg"
+                        width="30"
+                        height="30"
+                        alt="Name prefix"
+                      />
+                      <p class="truncate">
+                        0xca23ecad0xca23ecad0xca23ecad0xca23ecad0xca23ecad
+                      </p>
+                    </div>
+                  </td>
+                  <td>10 secs ago</td>
+                  <td>
+                    <div class="text-secondary">
+                      <p class="truncate">From 0cae53deesce53deesce53deesc</p>
+                      <p class="truncate">To 0xxx00000000000000000000</p>
+                    </div>
+                  </td>
+                  <td>0.61519 BNB</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="center">
+                      <img
+                        src="assets/svg/common/name-prefix-tx.svg"
+                        width="30"
+                        height="30"
+                        alt="Name prefix"
+                      />
+                      <p class="truncate">
+                        0xca23ecad0xca23ecad0xca23ecad0xca23ecad0xca23ecad
+                      </p>
+                    </div>
+                  </td>
+                  <td>10 secs ago</td>
+                  <td>
+                    <div class="text-secondary">
+                      <p class="truncate">From 0cae53deesce53deesce53deesc</p>
+                      <p class="truncate">To 0xxx00000000000000000000</p>
+                    </div>
+                  </td>
+                  <td>0.61519 BNB</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="center">
+                      <img
+                        src="assets/svg/common/name-prefix-tx.svg"
+                        width="30"
+                        height="30"
+                        alt="Name prefix"
+                      />
+                      <p class="truncate">
+                        0xca23ecad0xca23ecad0xca23ecad0xca23ecad0xca23ecad
+                      </p>
+                    </div>
+                  </td>
+                  <td>10 secs ago</td>
+                  <td>
+                    <div class="text-secondary">
+                      <p class="truncate">From 0cae53deesce53deesce53deesc</p>
+                      <p class="truncate">To 0xxx00000000000000000000</p>
+                    </div>
+                  </td>
+                  <td>0.61519 BNB</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="center">
+                      <img
+                        src="assets/svg/common/name-prefix-tx.svg"
+                        width="30"
+                        height="30"
+                        alt="Name prefix"
+                      />
+                      <p class="truncate">
+                        0xca23ecad0xca23ecad0xca23ecad0xca23ecad0xca23ecad
+                      </p>
+                    </div>
+                  </td>
+                  <td>10 secs ago</td>
+                  <td>
+                    <div class="text-secondary">
+                      <p class="truncate">From 0cae53deesce53deesce53deesc</p>
+                      <p class="truncate">To 0xxx00000000000000000000</p>
+                    </div>
+                  </td>
+                  <td>0.61519 BNB</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="center">
+                      <img
+                        src="assets/svg/common/name-prefix-tx.svg"
+                        width="30"
+                        height="30"
+                        alt="Name prefix"
+                      />
+                      <p class="truncate">
+                        0xca23ecad0xca23ecad0xca23ecad0xca23ecad0xca23ecad
+                      </p>
+                    </div>
+                  </td>
+                  <td>10 secs ago</td>
+                  <td>
+                    <div class="text-secondary">
+                      <p class="truncate">From 0cae53deesce53deesce53deesc</p>
+                      <p class="truncate">To 0xxx00000000000000000000</p>
+                    </div>
+                  </td>
+                  <td>0.61519 BNB</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="center">
+                      <img
+                        src="assets/svg/common/name-prefix-tx.svg"
+                        width="30"
+                        height="30"
+                        alt="Name prefix"
+                      />
+                      <p class="truncate">
+                        0xca23ecad0xca23ecad0xca23ecad0xca23ecad0xca23ecad
+                      </p>
+                    </div>
+                  </td>
+                  <td>10 secs ago</td>
+                  <td>
+                    <div class="text-secondary">
+                      <p class="truncate">From 0cae53deesce53deesce53deesc</p>
+                      <p class="truncate">To 0xxx00000000000000000000</p>
+                    </div>
+                  </td>
+                  <td>0.61519 BNB</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="center">
+                      <img
+                        src="assets/svg/common/name-prefix-tx.svg"
+                        width="30"
+                        height="30"
+                        alt="Name prefix"
+                      />
+                      <p class="truncate">
+                        0xca23ecad0xca23ecad0xca23ecad0xca23ecad0xca23ecad
+                      </p>
+                    </div>
+                  </td>
+                  <td>10 secs ago</td>
+                  <td>
+                    <div class="text-secondary">
+                      <p class="truncate">From 0cae53deesce53deesce53deesc</p>
+                      <p class="truncate">To 0xxx00000000000000000000</p>
+                    </div>
+                  </td>
+                  <td>0.61519 BNB</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="center">
+                      <img
+                        src="assets/svg/common/name-prefix-tx.svg"
+                        width="30"
+                        height="30"
+                        alt="Name prefix"
+                      />
+                      <p class="truncate">
+                        0xca23ecad0xca23ecad0xca23ecad0xca23ecad0xca23ecad
+                      </p>
+                    </div>
+                  </td>
+                  <td>10 secs ago</td>
+                  <td>
+                    <div class="text-secondary">
+                      <p class="truncate">From 0cae53deesce53deesce53deesc</p>
+                      <p class="truncate">To 0xxx00000000000000000000</p>
+                    </div>
+                  </td>
+                  <td>0.61519 BNB</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="center">
+                      <img
+                        src="assets/svg/common/name-prefix-tx.svg"
+                        width="30"
+                        height="30"
+                        alt="Name prefix"
+                      />
+                      <p class="truncate">
+                        0xca23ecad0xca23ecad0xca23ecad0xca23ecad0xca23ecad
+                      </p>
+                    </div>
+                  </td>
+                  <td>10 secs ago</td>
+                  <td>
+                    <div class="text-secondary">
+                      <p class="truncate">From 0cae53deesce53deesce53deesc</p>
+                      <p class="truncate">To 0xxx00000000000000000000</p>
+                    </div>
+                  </td>
+                  <td>0.61519 BNB</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <button class="latest__table-button">View all blocks</button>
+        </div>
+      </section>
+    </main>
+    <!-- Footer section -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <p class="footer__container__coppyright">
+          CopyRight &copy; 2020 - 2022 Tobechain. All Rights Reserved.
+        </p>
+        <ul class="footer__right">
+          <li><a class="footer__right-link" href="#">Terms of service</a></li>
+          <li><a class="footer__right-link" href="#">Contact us</a></li>
+          <li><a class="footer__right-link" href="#">Feedback</a></li>
+          <li><a class="footer__right-link" href="#">Join us</a></li>
+          <li>
+            <div class="footer__right-contact">
+              <a href="#">
+                <img
+                  src="assets/svg/contact/telegram.svg"
+                  width="20"
+                  height="20"
+                  alt="Telegram"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="assets/svg/contact/twitter.svg"
+                  width="20"
+                  height="20"
+                  alt="Twitter"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="assets/svg/contact/facebook.svg"
+                  width="20"
+                  height="20"
+                  alt="Facebook"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="assets/svg/contact/instagram.svg"
+                  width="20"
+                  height="20"
+                  alt="Instagram"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="assets/svg/contact/reddit.svg"
+                  width="20"
+                  height="20"
+                  alt="Reddit"
+                />
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+@use "../mixin" as *;
+
+.introduce {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  background: var(--primary);
+  background: url("../../assets/images/background.jpg");
+  background-size: cover;
+  margin-bottom: 110px;
+  @include responsive(tablet) {
+    margin-bottom: 80px;
+  }
+  &__container {
+    height: 100%;
+    @include center;
+    & h1 {
+      font-size: var(--text-4xl);
+      font-weight: bold;
+      color: var(--white);
+      text-align: center;
+    }
+  }
+  &__action {
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    @include responsive(mobile) {
+      position: static;
+    }
+    &-wrapper {
+      @include center;
+      border: 2px solid var(--secondary);
+      width: max-content;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 768px;
+      background: var(--background-gradient);
+      @include responsive(tablet) {
+        width: 100%;
+      }
+      @include responsive(mobile) {
+        padding: 0px;
+        border-radius: 0px;
+        border: 1px solid var(--border);
+      }
+    }
+    &-container {
+      background: var(--white);
+      display: flex;
+      align-items: center;
+      border-radius: inherit;
+      width: 100%;
+      & input {
+        flex: 1;
+        padding: 0 35px 0 30px;
+        color: var(--tertiary);
+        font-size: var(--text-xs);
+        @include responsive(mobile) {
+          padding: 0 15px 0 10px;
+        }
+        &::placeholder {
+          color: var(--border);
+        }
+      }
+    }
+    &-filter {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      color: var(--tertiary);
+      font-size: var(--text-md);
+      padding: 15px 30px 15px 35px;
+      border-right: 1px solid var(--border);
+      white-space: nowrap;
+      font-weight: 600;
+      @include responsive(mobile) {
+        padding: 15px 10px 15px 15px;
+      }
+    }
+  }
+}

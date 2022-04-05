@@ -1,0 +1,44 @@
+@use "../mixin" as *;
+
+.footer {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--gray);
+    font-size: var(--text-xs);
+    @include responsive(desktop) {
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__coppyright {
+      @include responsive(mobile) {
+        text-align: center;
+      }
+    }
+  }
+  &__right {
+    @include center;
+    flex-wrap: wrap;
+    & li {
+      padding: 10px 0;
+    }
+    &-link {
+      border-right: 1px solid var(--border) !important;
+      padding: 0 10px;
+      line-height: 1;
+      @include responsive(mobile) {
+        border-right: none !important;
+      }
+      &:last-child {
+        border-right: none;
+        margin-right: 20px;
+      }
+    }
+    &-contact {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}

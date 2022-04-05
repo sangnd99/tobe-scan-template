@@ -1,0 +1,88 @@
+@use "../mixin" as *;
+
+.latest {
+  display: grid;
+  @include gridCols(2);
+  padding-bottom: 50px;
+  @include responsive(laptop) {
+    @include gridCols(1);
+  }
+  gap: 30px;
+  &__table {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-lg);
+    color: var(--tertiary);
+    font-size: var(--text-xs);
+    height: max-content;
+    &-title {
+      padding: 16px 15px;
+      font-size: var(--text-lg);
+      font-weight: 600;
+      border-bottom: 1px solid var(--border);
+    }
+    &-layout {
+      max-width: 700px;
+    }
+    &-control {
+      overflow: auto;
+      max-height: 700px;
+      & table {
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: separate;
+        @include responsive(mobile) {
+          min-width: 700px;
+        }
+        & thead {
+          position: sticky;
+          top: 0;
+          & th {
+            padding: 20px 15px;
+            text-align: left;
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+          }
+        }
+        & tbody {
+          & tr td {
+            padding: 15px;
+            font-size: var(--text-2xs);
+            color: var(--gray);
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+    &-button {
+      height: 50px;
+      width: 100%;
+      @include center;
+      background: var(--primary);
+      color: var(--white);
+      border-bottom-right-radius: inherit;
+      border-bottom-left-radius: inherit;
+      font-size: var(--text-md);
+      font-weight: bold;
+      transition-duration: 0.3s;
+      &:hover {
+        filter: brightness(0.85);
+      }
+    }
+  }
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 100%;
+}
+
+.truncate {
+  @include truncate;
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
